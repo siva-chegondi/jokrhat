@@ -1,0 +1,17 @@
+baseURL = "http://jokrhat.in"
+languageCode = "en-us"
+
+title = "JokrHat"
+theme = "m10c"
+
+[params]
+	author = "Siva Chegondi"
+	description = "Web Engineer with good knowledge of *nix and DevOps"
+
+	[[params.social]]
+		name = "github"
+		url = "https:///github.com/siva-chegondi"
+	[[params.social]]
+		name = "linkedin"
+		url = "https://linkedin.com/in/siva-chegondi"
+

@@ -1,0 +1,10 @@
+# Ignore resources generated files
+resources/*
+
+# ignore build files
+public/*
+
+# ignore git files
+.gitmodules
+.git/
+

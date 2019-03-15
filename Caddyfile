@@ -1,0 +1,6 @@
+www.jokrhat.in, jokrhat.in {
+	root /var/www/jokrhat
+	gzip
+	log /var/log/access.log
+	tls
+}
