@@ -1,6 +1,9 @@
-www.jokrhat.in, jokrhat.in {
+jokrhat.in, www.jokrhat.in {
 	root /var/www/jokrhat
 	gzip
 	log /var/log/access.log
-	tls
+	tls smartsiva7@gmail.com {
+		ca https://acme-staging-v02.api.letsencrypt.org/directory
+	}
 }
+

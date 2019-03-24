@@ -3,15 +3,15 @@ title: "Blog Setup - Part 1"
 description: "Blog Development Process and tools"
 publishDate: "2019-03-05"
 date: "2019-03-05"
-keywords: "Hugo, AWS, Jenkins"
+keywords: "Hugo, AWS, Blog"
 ---
 
-When I first got idea of writing blog to stream my activities, I listed out base requirements.
+When I first got the idea of writing blog to stream my activities, I listed out basic requirements.
 
 - Static site generator
 - Server to run my site
 
-First thing is _Static site generator_, I found **[Hugo](https://gohugo.io)**, fastest static site generator written in Go with ultimate features like _image processing_ etc.,   
+First thing is _Static site generator_, I found **[Hugo](https://gohugo.io)**, the fastest static site generator written in Go with ultimate features like _image processing_ etc.,  
 All these with out installing any plugins.
 
 Basic commands to get started
@@ -28,7 +28,7 @@ hugo server
 hugo
 {{</highlight>}} 
 
-You can add your favourite [theme(s)](https://themes.gohugo.io), by placing theme content under **`/themes`** folder
+You can add your favourite [theme(s)](https://themes.gohugo.io), by placing theme under **`/themes`** folder
 
 With `config.toml` file, you configure hugo and theme params, see following file for reference
 
@@ -51,6 +51,6 @@ theme = "m10c"
 		url = "https://linkedin.com/in/siva-chegondi"
 {{</highlight>}}
 
-After setting up basic configuration, now start writing your posts _/content_ folder. I personally prefer markdown to write posts.
+After setting up basic configuration, now start writing your posts under _/content_ folder. I prefer markdown ( easy to format ) to write posts.
 
-In next post, we are going to discuss about containerizing of our blog to deploy on server.
+In our next post, we are gonna deploy our blog using ACME supported server, [caddy](https://caddyserver.org) which enables _tls_ by default using [letsencrypt](https://letsencrypt.org).

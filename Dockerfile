@@ -1,24 +1,20 @@
-FROM golang:1.12.0-alpine3.9 as helper
+FROM alpine:3.9
 
-# add git support
-RUN apk update && apk add --no-cache git
-
-# clone caddy server and builds
-RUN go get -u github.com/mholt/caddy && \
-		go get -u github.com/caddyserver/builds
-
-# now build it
-RUN go run $GOPATH/src/github.com/mholt/caddy/caddy/build.go -goos=linux -goarch=amd64
-
-FROM alpine:latest
-
-# get caddy binary
-COPY --from=helper $GOPATH/bin/caddy /usr/bin/caddy
+# install caddy
+RUN apk update && apk add --no-cache caddy
 
 # get build of site
-COPY ./public/* /var/www/jokrhat
+RUN mkdir -p /var/www/jokrhat && \
+		mkdir -p /var/log
 
+# copy site contents
+COPY public/ /var/www/jokrhat/
+
+# expose ssl port
 EXPOSE 443
-ENTRYPOINT ["/var/www/jokrhat"]
+EXPOSE 80
+
+# RUN caddy server
+WORKDIR /var/www/jokrhat
 CMD ["caddy"]
 
