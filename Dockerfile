@@ -14,7 +14,9 @@ COPY public/ /var/www/jokrhat/
 EXPOSE 443
 EXPOSE 80
 
+ENV CADDYPATH="/home/caddy"
+
 # RUN caddy server
 WORKDIR /var/www/jokrhat
-CMD ["caddy"]
+CMD ["caddy","-agree"]
 
