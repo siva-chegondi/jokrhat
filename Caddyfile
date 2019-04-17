@@ -3,7 +3,6 @@ jokrhat.in, www.jokrhat.in {
 	gzip
 	log /var/log/access.log
 	tls smartsiva7@gmail.com {
-		ca https://acme-staging-v02.api.letsencrypt.org/directory
 	}
 }
 
