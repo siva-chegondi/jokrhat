@@ -3,6 +3,7 @@ languageCode = "en-us"
 
 title = "JokrHat"
 theme = "m10c"
+disqusShortname="jokrhat"
 
 [params]
 	author = "Siva Chegondi"
