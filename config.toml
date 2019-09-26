@@ -1,9 +1,11 @@
 baseURL = "https://jokrhat.in"
 languageCode = "en-us"
 
-title = "JokrHat"
+title = "Jokrhat"
 theme = "m10c"
 disqusShortname="jokrhat"
+
+paginate = 7
 
 [params]
 	author = "Siva Chegondi"
