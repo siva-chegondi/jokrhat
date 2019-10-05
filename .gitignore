@@ -3,6 +3,7 @@ resources/*
 
 # ignore build files
 public/*
+**/public
 
 # ignore git files
 .gitmodules

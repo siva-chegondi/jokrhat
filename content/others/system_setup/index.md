@@ -3,7 +3,7 @@ title: "Arch System - Pikachu Theme"
 description: "Updated system config to update yabar menu and termite colors"
 publishDate: "2019-05-08"
 date: "2019-05-08"
-keywords: "Arch, Theme"
+categories: ["arch linux"]
 ---
 
 **Good Looking system always encourages us to do best.** Recently, When I am checking out instagram I came across a post with mint distro screen with awesome look.
