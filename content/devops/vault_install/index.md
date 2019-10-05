@@ -3,6 +3,7 @@ title: "Vault Installation - Persistant storage"
 publishDate: "2019-04-07"
 date: "2019-04-07"
 description: "Installation of vault with persistant storage"
+categories: ["devops"]
 ---
 
 **Hashicorp Vault**, solution to store secrets, certs, access tokens and sensitive data of your application. It exposes an API by which we can access secrets from our application.To know more about Vault, check out [docs](https://vaultproject.org/docs). Mainly vault is used in application deployment where we store our secret tokens, access keys outside of application source code and outside of deploy scripts.
