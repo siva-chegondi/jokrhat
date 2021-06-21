@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ## Declare all variables here
-export AWS_PROFILE="jokrhat"
-ecr_image="$AWS_ECR/jokrhat-blog:latest"
+export AWS_PROFILE="codeacademy"
+ecr_image="897610977534.dkr.ecr.ap-south-1.amazonaws.com/jokrhat:latest"
 local=$1
 
 # remove public/ folder
@@ -25,7 +25,7 @@ sudo docker build -t jokrhat-blog .
 
 if [ "$local" != "local" ];then
 	# login to ECR
-	aws ecr get-login --no-include-email --region us-east-1 > login.sh
+	aws ecr get-login-password --region us-east-1 > login.sh
 	sudo bash login.sh
 
 	# remove login shell script after login
