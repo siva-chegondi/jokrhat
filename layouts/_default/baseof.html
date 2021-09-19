@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JokrHat - {{ if .IsHome }} Siva Chegondi {{ else }}{{ .Title }}{{ end }}</title>
+        <meta name="author" value="{{ .Site.Params.author }}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138584855-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+ 			function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+  		gtag('config', 'UA-138584855-1');
+		</script>
+
+        <!-- Assets processing -->
+        {{ $baseStyle := resources.Get "sass/base.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $baseStyle.Permalink }}" />
+
+        {{ $homeStyle := resources.Get "sass/home.scss" | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $homeStyle.Permalink }}" />
+
+        {{ $mainStyle := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | toCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $mainStyle.Permalink }}" />
+    </head>
+    <body>
+        {{ block "main" . }}
+            {{ .Content }}
+        {{end}}
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <div class="home-page">
+        <div class="center-block">
+            <div class="content">
+                <div class="logo-block">
+                    <img src="avatar.jpg" class="logo" />
+                </div>
+                <div class="profile">
+                    <h1>Siva Chegondi</h1>
+                    <p>{{ .Site.Params.Description }}</p>
+                    <hr/>
+                    <ul class="categories-list">
+                        {{ range $cat, $pages := .Site.Taxonomies.categories }}
+                            <li class="category">
+                                <a href="/categories/{{ $cat }}" class="cat-link">{{ $cat }} - [{{len $pages }}]</a>
+                            </li>
+                        {{end}}
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+{{end}}
