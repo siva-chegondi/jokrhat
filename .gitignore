@@ -6,6 +6,5 @@ public/*
 **/public
 
 # ignore git files
-.gitmodules
 .git/
 
