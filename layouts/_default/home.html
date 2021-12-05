@@ -4,11 +4,16 @@
             <div class="content">
                 <div class="logo-block">
                     <img src="avatar.jpg" class="logo" />
-                    <img src="profile.jpeg" class="profile"/>
+                    <img src="profile.png" class="profile"/>
                 </div>
                 <div class="profile">
                     <h1>Siva Chegondi</h1>
                     <p>{{ .Site.Params.Description }}</p>
+                    <div class="app-header-social">
+                        {{ range .Site.Params.social }}
+                          <a target="_blank" href="{{ .url }}">{{ partial "icon.html" (dict "ctx" $ "name" .name ) }}</a>
+                        {{ end }}
+                      </div>
                     <hr/>
                     <ul class="categories-list">
                         {{ range $cat, $pages := .Site.Taxonomies.categories }}

@@ -9,7 +9,7 @@ paginate = 7
 
 [params]
 	author = "Siva Chegondi"
-	description = "Full Stack developer with Good knowledge of Operations and cloud technologies"
+	description = "Full Stack developer with good knowledge of operations & cloud technologies"
     
     [params.style]
         darkestColor = "#e0e0e0"

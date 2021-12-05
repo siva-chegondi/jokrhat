@@ -79,6 +79,7 @@ $borderColor: #2196F3;
                         display: inline;
                         white-space: nowrap;
                         letter-spacing: 0px;
+                        text-transform: capitalize;
                         font: bold 14px/2 'Roboto', sans-serif;
 
                         & > a {
