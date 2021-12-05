@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:latest
 
 # install caddy
 RUN apk update && apk add --no-cache caddy
@@ -11,12 +11,11 @@ RUN mkdir -p /var/www/jokrhat && \
 COPY public/ /var/www/jokrhat/
 
 # expose ssl port
-EXPOSE 443
 EXPOSE 80
 
 ENV CADDYPATH="/home/caddy"
 
 # RUN caddy server
 WORKDIR /var/www/jokrhat
-CMD ["caddy","-agree"]
+CMD ["caddy", "run"]
 

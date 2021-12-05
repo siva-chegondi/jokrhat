@@ -1,7 +1,7 @@
-baseURL = "https://jokrhat.in"
+baseURL = "/"
 languageCode = "en-us"
 
-title = "Jokrhat"
+title = "Siva Chegondi"
 theme = "m10c"
 disqusShortname="jokrhat"
 
@@ -9,8 +9,14 @@ paginate = 7
 
 [params]
 	author = "Siva Chegondi"
-	description = "Web Engineer with good knowledge of *nix and DevOps"
-
+	description = "Full Stack developer with good knowledge of operations & cloud technologies"
+    
+    [params.style]
+        darkestColor = "#e0e0e0"
+        darkColor = "#ffffff"
+        lightColor = "#474747"
+        lightestColor = "#787878"
+        primaryColor = "#1278c8"
 	[[params.social]]
 		name = "github"
 		url = "https:///github.com/siva-chegondi"

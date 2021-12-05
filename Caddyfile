@@ -1,8 +1,7 @@
-jokrhat.in, www.jokrhat.in {
-	root /var/www/jokrhat
-	gzip
-	log /var/log/access.log
-	tls smartsiva7@gmail.com {
+jokrhat.in:80, www.jokrhat.in:80 {
+	root * /var/www/jokrhat
+	file_server
+	log {
+		output file /var/log/access.log
 	}
 }
-

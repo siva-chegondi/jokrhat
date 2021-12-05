@@ -1,0 +1,30 @@
+{{ define "main" }}
+    <div class="home-page">
+        <div class="center-block">
+            <div class="content">
+                <div class="logo-block">
+                    <img src="avatar.jpg" class="logo" />
+                    <img src="profile.png" class="profile"/>
+                </div>
+                <div class="profile">
+                    <h1>Siva Chegondi</h1>
+                    <p>{{ .Site.Params.Description }}</p>
+                    <div class="app-header-social">
+                        {{ range .Site.Params.social }}
+                          <a target="_blank" href="{{ .url }}">{{ partial "icon.html" (dict "ctx" $ "name" .name ) }}</a>
+                        {{ end }}
+                      </div>
+                    <hr/>
+                    <ul class="categories-list">
+                        {{ range $cat, $pages := .Site.Taxonomies.categories }}
+                            <li class="category">
+                                <a href="/categories/{{ $cat }}" class="cat-link">{{ $cat }} - [{{len $pages }}]</a>
+                            </li>
+                        {{end}}
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+{{end}}
