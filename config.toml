@@ -7,6 +7,10 @@ disqusShortname="jokrhat"
 
 paginate = 7
 
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+
 [params]
 	author = "Siva Chegondi"
 	description = "Full Stack developer with good knowledge of operations & cloud technologies"

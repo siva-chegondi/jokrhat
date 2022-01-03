@@ -4,7 +4,7 @@ description: "vault API accessing with Go Program"
 publishDate: "2019-04-06"
 date: "2019-04-05"
 tags: ["vault","go","API"]
-categories: ["go"]
+categories: ["programming"]
 ---
 
 **Hashicorp Vault**, solution to store secrets, certs, access tokens and sensitive data of your application. It exposes an API by which we can access secrets from our application.To know more about Vault, check out [docs](https://www.vaultproject.io/docs)

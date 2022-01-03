@@ -3,7 +3,8 @@ title: "SSL Working - Root and Intermediate Certificates"
 description: "Details of SSL working"
 publishDate: "2019-04-05"
 date: "2019-04-05"
-categories: [SSL]
+categories: [tech]
+tags: [SSL, certs]
 ---
 
 Here I am gonna discuss about how TLS works. Components involved were **server**, **client** and **Certificate Authority (CA)**.  
