@@ -10,3 +10,6 @@ public/*
 
 # build lock
 .hugo_build.lock
+
+# ignore idea intellij files
+.idea

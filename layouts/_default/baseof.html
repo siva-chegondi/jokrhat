@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JokrHat - {{ if .IsHome }} Siva Chegondi {{ else }}{{ .Title }}{{ end }}</title>
+        <title>Jokrhat - {{ if .IsHome }} {{ .Site.Params.author }} {{ else }}{{ .Title }}{{ end }}</title>
         <meta name="author" value="{{ .Site.Params.author }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
