@@ -8,3 +8,5 @@ public/*
 # ignore git files
 .git/
 
+# build lock
+.hugo_build.lock
