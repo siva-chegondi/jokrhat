@@ -3,7 +3,8 @@ title: "Blog Setup - Part 1"
 description: "Blog Development Process and tools"
 publishDate: "2019-03-05"
 date: "2019-03-05"
-categories: ["blog"]
+categories: ["tech"]
+tags: ["hugo", "blog"]
 ---
 
 When I first got the idea of writing blog to stream my activities, I listed out basic requirements.

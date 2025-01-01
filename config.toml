@@ -1,11 +1,15 @@
 baseURL = "/"
 languageCode = "en-us"
 
-title = "Siva Chegondi"
+title = "Jokrhat"
 theme = "m10c"
 disqusShortname="jokrhat"
 
 paginate = 7
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
 
 [params]
 	author = "Siva Chegondi"

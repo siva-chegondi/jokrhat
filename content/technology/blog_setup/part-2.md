@@ -3,8 +3,8 @@ title: "Blog Setup - Part 2"
 description: "Blog deployment using caddy on AWS"
 publishDate: "2019-03-18"
 date: "2019-03-18"
-categories: ["blog"]
-tags: ["caddy", "aws"]
+categories: ["tech"]
+tags: ["caddy", "aws", "hugo", "blog"]
 ---
 
 Here we are gonna discuss about [`caddy`][caddy_url] server which by default enables `tls` using ACME protocol and [letsencrypt][letsencrypt_url]

@@ -3,8 +3,8 @@ title: "Jenkins on EC2 using Terraform"
 publishDate: "2019-03-07"
 description: "Installation of Jenkins on AWS EC2 using Terraform"
 draft: true
-categories: ["devops"]
-tags: ["jenkins"]
+categories: ["tech"]
+tags: ["jenkins", "devops"]
 ---
 
 Today I studied about terraform and practiced it by setting Jenkins server on AWS EC2 instance.

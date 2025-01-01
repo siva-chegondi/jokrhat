@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 
-title = "JokrHat"
+title = "Jokrhat"
 theme = "m10c"
 
 [params]
