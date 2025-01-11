@@ -2,11 +2,11 @@ baseURL = "/"
 languageCode = "en-us"
 
 title = "Jokrhat"
-theme = ["github.com/siva-chegondi/hugo-theme-m10c"]
 disqusShortname="jokrhat"
 
 paginate = 7
 
+theme = ["github.com/siva-chegondi/hugo-theme-m10c"]
 [module]
 	[[module.imports]]
 		path = "github.com/siva-chegondi/hugo-theme-m10c"
